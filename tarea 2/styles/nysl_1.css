@@ -1,0 +1,45 @@
+header {
+  background-image: url("../imagenes/design1_image1.jpg");
+  background-size: cover;
+  height: 300px;
+}
+h2 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+}
+#logo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  float: right;
+  right: 30px;
+  top: 290px;
+} 
+h1 {
+ position: absolute;
+ top: 10px;
+ margin-left: 10px;
+ font-size: 50px;
+}
+nav {
+  float: left;
+  width: 20vw;
+  text-align: center;
+}
+nav a{
+  display: block;
+  margin: 70px 0;
+  text-decoration: none;
+}
+main {
+  width: 70vw;
+  float: right;
+  margin: 0 20px 0 0;
+  padding: 50px 0;
+}
+.active{
+  text-decoration: underline;
+}
