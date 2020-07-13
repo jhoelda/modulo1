@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northside Youth Soccer League</title>
+    <link rel="stylesheet" href="styles/nysl_3.css">
+</head>
+<body>
+    <div class="grid-container">
+    <header>
+        <h1>Northside Youth Soccer League</h1>
+    </header>
+    
+    <div class="navbar_bottom">
+        <h2>Registration Form</h2>
+        <img src="imagenes/nysl_logo.png" alt="nysl_logo" id="logo">
+    </div>
+
+    <nav class="navbar_top">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About NYSL</a>
+        <a href="contact.html">Contact</a>
+        <a href="game_info.html">Game Info</a>
+        <a href="NYSL-Rules.html">NYSL Rules</a>
+        <a href="galery.html">Galery</a>
+    </nav>
+    <aside></aside>
+    <main id="register">
+        <article>
+        <form action="show-data.html">
+        <!-- textos para llenar -->
+        <fieldset>
+            <label>Player’s First Name: 
+                <input type="text" placeholder="John" name="first-name" required>
+            </label>
+            <label>Last Name:
+                <input type="text" placeholder="Smith" name="last-name" required> 
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Street Address:
+                <input type="text" name="street-address">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>City:
+                <input type="text" name="city">
+            </label>
+            <label>Zip Code:
+                <input type="number" name="zip-code">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Birth Date:
+                <input type="date" name="birth-day">
+            </label>
+            <!-- seleccion unica -->
+            <label>Gender: 
+                <label>Female
+                    <input type="radio" name="gender" value="female">
+                </label>
+                <label>Male 
+                    <input type="radio" name="gender" value="Male">
+                </label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <!-- seleccion unica -->
+            <label>Grade: 
+                <label>Pre-School
+                    <input type="radio" name="grade" value="pre-school">
+                </label>
+                <label>1st
+                    <input type="radio" name="grade" value="1">
+                </label>
+                <label>2nd
+                    <input type="radio" name="grade" value="2">
+                </label>
+                <label>3rd
+                    <input type="radio" name="grade" value="3">
+                </label>
+                <label>4th
+                    <input type="radio" name="grade" value="4">
+                </label>
+                <label>5th
+                    <input type="radio" name="grade" value="5">
+                </label>
+            </label>
+        </fieldset>   
+        <fieldset>
+            <label>Parent/Guardian:
+                <input type="text" name="parent">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Contact Phone:
+                <input type="tel" name="tel">
+            </label>
+            <label>Contact Email:
+                <input type="email" name="email">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Which elementary schools do you live near?</label>
+            <!-- lista desplegable -->
+            <label>First Closest School: 
+                <select name="first-school">
+                <option value="AJ-Katzenmaier">AJ Katzenmaier</option>
+                <option value="Greenbay">Greenbay</option>
+                <option value="Howard-A-Yeager">Howard A Yeager</option>
+                <option value="Marjorie-Hart">Marjorie P Hart</option>
+                <option value="North-Elementary">North Elementary</option>
+                <option value="South-Elementary">South Elementary</option>
+                </select>
+            </label>
+            <!-- lista desplegable -->
+            <label>Second Closest School: 
+                <select name="second-school">
+                <option value="AJ-Katzenmaier">AJ Katzenmaier</option>
+                <option value="Greenbay">Greenbay</option>
+                <option value="Howard-A-Yeager">Howard A Yeager</option>
+                <option value="Marjorie-Hart">Marjorie P Hart</option>
+                <option value="North-Elementary">North Elementary</option>
+                <option value="South-Elementary">South Elementary</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <!-- seleccion multiple -->
+            <label>What position(s) do you normally play? (check all that apply)</label>
+            <label>Forward
+                <input type="checkbox" name="position" value="forward">
+            </label>
+            <label>Defense
+                <input type="checkbox" name="position" value="defense">
+            </label>
+            <label>Midfield
+                <input type="checkbox" name="position" value="midfield">
+            </label>
+            <label>Goalkeeper
+                <input type="checkbox" name="position" value="goalkeeper">
+            </label>
+        </fieldset>
+        <fieldset>
+            <!-- seleccion multiple -->
+            <label>What position(s) do you want play? (check all that apply)</label>
+            <label>Forward
+                <input type="checkbox" name="position" value="forward">
+            </label>
+            <label>Defense
+                <input type="checkbox" name="position" value="defense">
+            </label>
+            <label>Midfield
+                <input type="checkbox" name="position" value="midfield">
+            </label>
+            <label>Goalkeeper
+                <input type="checkbox" name="position" value="goalkeeper">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Already Have a Uniform
+                <input type="checkbox" name="uniform" value="uniform">
+            </label>
+            <!-- lista desplegable -->
+            <label>Jersey Size:
+                <select name="jersey-size:">
+                <option value="Youth-Small">Youth Small</option>
+                <option value="Youth-Medium">Youth Medium</option>
+                <option value="Youth-Large">Youth Large</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="Extra-Large">Extra-Large</option>
+                </select>
+            </label>
+            <!-- lista desplegable -->
+            <label>Shorts Size:
+                <select name="jersey-size:">
+                <option value="Youth-Small">Youth Small</option>
+                <option value="Youth-Medium">Youth Medium</option>
+                <option value="Youth-Large">Youth Large</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="Extra-Large">Extra-Large</option>
+                </select>
+            </label>
+        </fieldset>
+        <!-- enviar -->
+            <input type="submit">
+        </form>
+
+        </article>
+    </main>
+    <footer></footer>
+</div>
+</body>
+</html>
