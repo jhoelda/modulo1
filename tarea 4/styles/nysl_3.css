@@ -12,6 +12,7 @@ a{
 }
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("../imagenes/fondo1.png");
 }
 .grid-container{
     display: grid;
@@ -119,6 +120,7 @@ article{
     margin-bottom: 5%;
     border-radius: 15px;
     overflow-x: auto;
+    box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.692);
 }
 h3{
     color: var(--primary-color);
@@ -191,5 +193,31 @@ td,th{
 
 /* estilo formulario */
 input{
-    /* width: 50%; */
+    width: 25%;
+    border: 0;
+    border-bottom: 2px solid var(--primary-color);
+    background-color: transparent;
 }
+input, select{
+    margin-right: 1.5em;
+}
+input:focus{
+    outline: none;
+}
+input[type=radio], input[type=checkbox]{
+    width: 1em;
+    margin-right: 1.5em;
+}
+input[type="submit"]{
+    width: 20%;
+    height: 3em;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 30px 40%;
+}
+fieldset{
+    border: 0;
+    margin-bottom: 1.5em;
+}
+

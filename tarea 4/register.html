@@ -25,11 +25,13 @@
         <a href="NYSL-Rules.html">NYSL Rules</a>
         <a href="galery.html">Galery</a>
     </nav>
-    <aside></aside>
+    <aside>
+        <a href="register.html">Register Form</a>
+    </aside>
     <main id="register">
         <article>
         <form action="show-data.html">
-        <!-- textos para llenar -->
+        <!-- DATOS PERSONALES textos para llenar -->
         <fieldset>
             <label>Player’s First Name: 
                 <input type="text" placeholder="John" name="first-name" required>
@@ -40,7 +42,7 @@
         </fieldset>
         <fieldset>
             <label>Street Address:
-                <input type="text" name="street-address">
+                <input type="text" name="street-address" >
             </label>
         </fieldset>
         <fieldset>
@@ -55,7 +57,7 @@
             <label>Birth Date:
                 <input type="date" name="birth-day">
             </label>
-            <!-- seleccion unica -->
+            <!-- SEXO seleccion unica -->
             <label>Gender: 
                 <label>Female
                     <input type="radio" name="gender" value="female">
@@ -66,7 +68,7 @@
             </label>
         </fieldset>
         <fieldset>
-            <!-- seleccion unica -->
+            <!-- GRADO seleccion unica -->
             <label>Grade: 
                 <label>Pre-School
                     <input type="radio" name="grade" value="pre-school">
@@ -102,7 +104,7 @@
             </label>
         </fieldset>
         <fieldset>
-            <label>Which elementary schools do you live near?</label>
+            <label><strong>Which elementary schools do you live near?</strong></label><br><br>
             <!-- lista desplegable -->
             <label>First Closest School: 
                 <select name="first-school">
@@ -127,8 +129,8 @@
             </label>
         </fieldset>
         <fieldset>
-            <!-- seleccion multiple -->
-            <label>What position(s) do you normally play? (check all that apply)</label>
+            <!-- 1 POSICION seleccion multiple -->
+            <label><strong>What position(s) do you normally play?</strong> (check all that apply)</label><br><br>
             <label>Forward
                 <input type="checkbox" name="position" value="forward">
             </label>
@@ -143,8 +145,8 @@
             </label>
         </fieldset>
         <fieldset>
-            <!-- seleccion multiple -->
-            <label>What position(s) do you want play? (check all that apply)</label>
+            <!-- 2 POSICION seleccion multiple -->
+            <label><strong>What position(s) do you want play?</strong> (check all that apply)</label><br><br>
             <label>Forward
                 <input type="checkbox" name="position" value="forward">
             </label>
@@ -187,6 +189,26 @@
                 </select>
             </label>
         </fieldset>
+        <h3>Permission to Play</h3><br>
+        <p>
+            I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+            Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+            accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+            employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+            on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+            sponsored activities, which transportation. <br><br>
+            By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+            cancellation policy and agree to its terms.
+        </p><br>
+        <fieldset>
+            <label>Parent/Guardian Signature:
+                <input type="text" name="parent-signature">
+            </label>
+            <label>Date:
+                <input type="date" name="birth-day">
+            </label>
+        </fieldset>
+        
         <!-- enviar -->
             <input type="submit">
         </form>
